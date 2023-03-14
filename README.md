@@ -64,7 +64,7 @@ It's also recommended that you change the default password of your user for secu
 To install (or update) LoveboxPi on your device all you need to do is to run the following command. Make sure you replace `VERSION=X.X.X` with the desired LoveboxPi release version. 
 
 ```console
-VERSION=X.X.X wget -O /tmp/loveboxpi.deb https://github.com/raven-worx/loveboxpi/releases/download/v${VERSION}/loveboxpi_${VERSION}_armhf.deb
+VERSION=X.X.X wget -O /tmp/loveboxpi.deb https://github.com/proellfabian/loveboxproell/releases/download/v${VERSION}/loveboxpi_${VERSION}_armhf.deb
 sudo apt update
 sudo apt install /tmp/loveboxpi.deb
 ```
@@ -78,12 +78,4 @@ Make sure you do **not** create an account using SSO (Google) but with simply em
 
 Once the setup via the LoveboxPi web interface is done you can access the LoveboxPi either via the remote.it website on your account page or also via the official remote.it mobile app (Android, iOS).
 
-## 3D Printer files
 
-I also designed a 3d printable *reference design* of a box for the hardware components listed above.
-
-You can either find the files in the `3d` folder of this repository or also at [thingiverse.com](https://www.thingiverse.com/thing:5174353).
-
-## License
-
-Licensed under [GPLv3](https://github.com/raven-worx/loveboxpi/blob/master/LICENSE)
