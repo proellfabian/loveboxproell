@@ -27,7 +27,7 @@ class Led:
 		tup = hex2rgb(colorHex)
 		color = tuple((tup[0]/255.0, tup[1]/255.0, tup[2]/255.0))
 		
-		self.led = GPIOLED(pin_r, pin_g, pin_b, active_high=True) # active_high: True for cathode RGB LED, False for anode RGB LED; make this configurable?
+		self.led = GPIOLED(pin_r, pin_g, pin_b, active_high=False) # active_high: True for cathode RGB LED, False for anode RGB LED; make this configurable?
 		
 		bg = True if loops is None else False
 		self.led.pulse(fade_in_time=1, fade_out_time=1, on_color=color, off_color=(0,0,0), n=loops, background=bg)
